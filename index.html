@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101512"><title>River — Poker Tournament Manager</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#" data-page="dashboard"><span class="brand-mark">R</span><span><b>RIVER</b><small>POKER TOURNAMENTS</small></span></a>
+    <div class="nav-label">MENÚ PRINCIPAL</div>
+    <button class="nav-item active" data-page="dashboard"><span>▦</span> Inicio</button>
+    <button class="nav-item" data-page="create"><span>＋</span> Crear torneo</button>
+    <button class="nav-item" data-page="timer"><span>◷</span> Director de torneo</button>
+    <button class="nav-item" data-page="chips"><span>◉</span> Gestor de fichas</button>
+    <button class="nav-item" data-page="players"><span>♙</span> Jugadores</button>
+    <button class="nav-item" data-page="prizes"><span>◇</span> Calculadora de premios</button>
+    <div class="nav-label nav-label-lower">TU ESPACIO</div>
+    <button class="nav-item" data-page="history"><span>▤</span> Mis torneos</button>
+    <div class="sidebar-bottom"><div class="status-dot"></div><span>Modo local activo</span><small>Los datos se guardan en este dispositivo</small></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><span class="eyebrow" id="crumb">TU CENTRO DE CONTROL</span><h2 id="page-title">Inicio</h2></div><div class="top-actions"><span class="local-pill"><i></i> LOCAL</span><button class="avatar" title="Perfil local">P</button></div></header>
+    <section id="view" class="view"></section>
+    <footer>RIVER <span>·</span> Hecho para que la partida fluya.</footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
