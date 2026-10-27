@@ -1,50 +1,117 @@
+```html
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#101512">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101512">
 
-<title>RIVER | Organizador de Torneos de Póker</title>
+  <title>RIVER | Organizador de Torneos de Póker</title>
 
-<meta name="description" content="Organiza tus torneos de póker con RIVER. Configura jugadores, duración, niveles, ciegas y fichas para planificar tus partidas fácilmente.">
+  <meta name="description" content="Organiza tus torneos de póker con RIVER. Configura jugadores, duración, niveles, ciegas y fichas para planificar tus partidas fácilmente.">
 
-<link rel="stylesheet" href="styles.css">
+  <meta name="google-site-verification" content="TAQ-K25aUsu1C1p9gPj65YEzaibd3KlwoMPan37DDv0">
 
-<meta name="google-site-verification" content="TAQ-K25aUsu1C1p9gPj65YEzaibd3KlwoMPan37DDv0" />
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<div class="app-shell">
-  <aside class="sidebar">
-    <a class="brand" href="#" data-page="dashboard"><span class="brand-mark">R</span><span><b>RIVER</b><small>POKER TOURNAMENTS</small></span></a>
-    <div class="nav-label">MENÚ PRINCIPAL</div>
-    <button class="nav-item active" data-page="dashboard"><span>▦</span> Inicio</button>
-    <button class="nav-item" data-page="create"><span>＋</span> Crear torneo</button>
-    <button class="nav-item" data-page="timer"><span>◷</span> Director de torneo</button>
-    <button class="nav-item" data-page="chips"><span>◉</span> Gestor de fichas</button>
-    <button class="nav-item" data-page="players"><span>♙</span> Jugadores</button>
-    <button class="nav-item" data-page="prizes"><span>◇</span> Calculadora de premios</button>
-    <div class="nav-label nav-label-lower">TU ESPACIO</div>
-    <button class="nav-item" data-page="history"><span>▤</span> Mis torneos</button>
-    <div class="sidebar-bottom"><div class="status-dot"></div><span>Modo local activo</span><small>Los datos se guardan en este dispositivo</small></div>
-  </aside>
-  <main class="main">
-    <header class="topbar"><div><span class="eyebrow" id="crumb">TU CENTRO DE CONTROL</span><h2 id="page-title">Inicio</h2></div><div class="top-actions"><span class="local-pill"><i></i> LOCAL</span><button class="avatar" title="Perfil local">P</button></div></header>
-    <section id="view" class="view"></section>
-    <footer>RIVER <span>·</span> Hecho para que la partida fluya.</footer>
-  </main>
-</div>
-<div id="toast" class="toast" role="status"></div>
-<script src="app.js"></script>
-<section class="seo-guide">
-  <h2>Organiza tus torneos de póker con RIVER</h2>
-  <p>RIVER te ayuda a preparar torneos de póker, configurar niveles y ciegas, gestionar fichas y organizar jugadores y premios.</p>
-  <h3>Cómo organizar un torneo de póker</h3>
-  <p>Antes de empezar, decide cuántos jugadores participarán, cuánto durará la partida y qué estructura de ciegas utilizarás.</p>
-  <h3>Cómo gestionar las fichas</h3>
-  <p>Establece las fichas iniciales de cada jugador y comprueba que tienes suficientes fichas de cada valor para la partida.</p>
-  <h3>Cómo planificar los premios</h3>
-  <p>Define las reglas de reparto de premios antes de empezar y comunícalas a todos los participantes.</p>
-</section>
+
+  <section class="seo-guide">
+    <h1>Organiza tu torneo de póker con RIVER</h1>
+
+    <p>
+      Prepara tus torneos de póker fácilmente con RIVER. Configura el número
+      de jugadores, la duración de la partida, los niveles, las ciegas y las
+      fichas para organizar torneos adaptados a tus reglas.
+    </p>
+
+    <h2>Todo lo que necesitas para tu torneo</h2>
+
+    <p>
+      Planifica la estructura de ciegas, establece las fichas iniciales y
+      organiza los niveles de juego. También puedes gestionar jugadores,
+      consultar tus torneos y calcular el reparto de premios.
+    </p>
+  </section>
+
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <a class="brand" href="#" data-page="dashboard">
+        <span class="brand-mark">R</span>
+        <span>
+          <b>RIVER</b>
+          <small>POKER TOURNAMENTS</small>
+        </span>
+      </a>
+
+      <div class="nav-label">MENÚ PRINCIPAL</div>
+
+      <button class="nav-item active" data-page="dashboard">
+        <span>▦</span> Inicio
+      </button>
+
+      <button class="nav-item" data-page="create">
+        <span>＋</span> Crear torneo
+      </button>
+
+      <button class="nav-item" data-page="timer">
+        <span>◷</span> Director de torneo
+      </button>
+
+      <button class="nav-item" data-page="chips">
+        <span>◉</span> Gestor de fichas
+      </button>
+
+      <button class="nav-item" data-page="players">
+        <span>♙</span> Jugadores
+      </button>
+
+      <button class="nav-item" data-page="prizes">
+        <span>◇</span> Calculadora de premios
+      </button>
+
+      <div class="nav-label nav-label-lower">TU ESPACIO</div>
+
+      <button class="nav-item" data-page="history">
+        <span>▤</span> Mis torneos
+      </button>
+
+      <div class="sidebar-bottom">
+        <div class="status-dot"></div>
+        <span>Modo local activo</span>
+        <small>Los datos se guardan en este dispositivo</small>
+      </div>
+    </aside>
+
+    <main class="main">
+
+      <header class="topbar">
+        <div>
+          <span class="eyebrow" id="crumb">TU CENTRO DE CONTROL</span>
+          <h2 id="page-title">Inicio</h2>
+        </div>
+
+        <div class="top-actions">
+          <span class="local-pill"><i></i> LOCAL</span>
+          <button class="avatar" title="Perfil local">P</button>
+        </div>
+      </header>
+
+      <section id="view" class="view"></section>
+
+      <footer>
+        RIVER <span>·</span> Hecho para que la partida fluya.
+      </footer>
+
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="app.js"></script>
+
 </body>
 </html>
+```
