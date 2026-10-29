@@ -25,12 +25,4 @@ No requiere instalación de paquetes ni claves API para probar la versión inici
 - La versión actual no incluye exportación PDF/CSV, ligas privadas ni pagos.
 - Antes de usarla para un torneo real, conviene probar los casos límite y revisar las reglas que quieras utilizar.
 
-## Publicar en GitHub Pages
-1. Crea un repositorio nuevo en GitHub.
-2. Sube `index.html`, `styles.css`, `app.js` y `README.md` a la raíz del repositorio.
-3. En el repositorio, abre **Settings → Pages**.
-4. En **Build and deployment**, selecciona **Deploy from a branch**.
-5. Selecciona la rama `main` y la carpeta `/ (root)`, y guarda.
-6. Espera a que GitHub Pages indique la dirección pública del sitio.
 
-Esta versión es completamente estática y no necesita Supabase para las funciones locales.
